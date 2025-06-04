@@ -49,3 +49,7 @@ def upload():
         return jsonify({"status": "success", "message": "Video uploaded!"})
 
     return render_template("upload.html")
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=80)
+
